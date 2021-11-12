@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>台灣旅遊景點導覽</title>
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link  rel="stylesheet" href="assets/fontawsome/css/all.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="wrapper clearfix"> 
+        <header class="full-header sticky-header">
+            <nav class="navbar navbar-expand-lg  navbar-dark theme-bg-color py-2">
+                <div class="container">
+                    <a href="index.html">
+                        <img src="images/logo.png" class="logo" alt="Logo" height="62">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+                        <ul class="navbar-nav ml-auto pr-0">
+                            <li class="nav-item"><a href="#" class="nav-link">精選活動</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">全台景點</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">探索美食</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">住宿飯店</a></li>
+                        </ul>
+                    </div>
+                </div> 
+            </nav>
+            <section style="background: url('images/banner-1.png') top center; background-size: cover; height: 451px;">
+                <div class="container d-flex align-items-center justify-content-center h-100">
+                    <form class="navbar-search w-100">
+                        <div class="col-lg-12 text-center">
+                            <div class="dropdown">
+                                <button class="search-dropdown rounded-pill w-75" type="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/search.svg"><span class="site">我想去...</span>
+                                </button>
+                                <div class="dropdown-menu w-75" aria-labelledby="dropdownMenu2">
+                                    <div class="container">
+                                        <div class="row mb-4">
+                                            <div class="col-12">
+                                                <h3><img class="pr-2" src="images/hit.svg">熱門關鍵字</h3>
+                                            </div>
+                                        </div>
+                                        <div class="row d-flex justify-content-start">
+                                            <div class="col-md-2 col-sm-6 col-6 mb-2">
+                                                <ul>
+                                                    <h3 class="mb-1">北部</h3>
+                                                    <li class="dropdown-item" type="button">基隆</li>
+                                                    <li class="dropdown-item" type="button">新北</li>
+                                                    <li class="dropdown-item" type="button">台北</li>
+                                                    <li class="dropdown-item" type="button">桃園</li>
+                                                    <li class="dropdown-item" type="button">新竹</li>
+                                                    <li class="dropdown-item" type="button">苗栗</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6 col-6 mb-2">
+                                                <ul>
+                                                    <h3 class="mb-1">中部</h3>
+                                                    <li class="dropdown-item" type="button">台中</li>
+                                                    <li class="dropdown-item" type="button">彰化</li>
+                                                    <li class="dropdown-item" type="button">南投</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6 col-6 mb-2">
+                                                <ul>
+                                                    <h3 class="mb-1">南部</h3>
+                                                    <li class="dropdown-item" type="button">嘉義</li>
+                                                    <li class="dropdown-item" type="button">台南</li>
+                                                    <li class="dropdown-item" type="button">高雄</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6 col-6 mb-2">
+                                                <ul>
+                                                    <h3 class="mb-1">東部</h3>
+                                                    <li class="dropdown-item" type="button">宜蘭</li>
+                                                    <li class="dropdown-item" type="button">花蓮</li>
+                                                    <li class="dropdown-item" type="button">台東</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6 col-6 mb-2">
+    
+                                                <ul>
+                                                    <h3 class="mb-1">外島</h3>
+                                                    <li class="dropdown-item" type="button">澎湖 </li>
+                                                    <li class="dropdown-item" type="button">金門</li>
+                                                    <li class="dropdown-item" type="button">馬祖</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+            </section>
+        </header>
+        <section id="activity">
+            <div class="container">
+                <div class="row my-4">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="section-title my-5">
+                            <div class="img">
+                                <img src="images/activity.svg" width="47" height="65">
+                            </div>
+                            <h1 class="title">精選活動</h1>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-sm-12 col-12 mb-4">
+                        <div class="card card-activity">
+                            <img class="card-img-top"  src="images/activity/1.png">
+                            <div class="card-body">
+                                <h2 class="card-title">新北市歡樂耶誕城</h2>
+                                <div class="d-flex justify-content-start align-items-end py-2">
+                                    <div class="font-weight-bold pr-2">時間</div>
+                                    <small>2021/11/20-2021/12/30</small>                                    
+                                </div>
+                                <div class="d-flex justify-content-start align-items-end py-2">
+                                    <div class="font-weight-bold pr-2">地點</div>
+                                    <small>新北市板橋區</small>                                    
+                                </div>
+                                <p>新北市歡樂耶誕城，是台灣新北市新板特區商圈的一系列耶誕節活動的總稱，首次舉辦是在2011</p>
+                                <div class="d-flex justify-content-end">
+                                    <div class="button rounded-pill justify-content-end">活動詳情</div>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-12 mb-4">
+                        <div class="card card-activity">
+                            <img class="card-img-top"  src="images/activity/2.png">
+                            <div class="card-body">
+                                <h2 class="card-title">新北市歡樂耶誕城</h2>
+                                <div class="d-flex justify-content-start align-items-end py-2">
+                                    <div class="font-weight-bold pr-2">時間</div>
+                                    <small>2021/11/20-2021/12/30</small>                                    
+                                </div>
+                                <div class="d-flex justify-content-start align-items-end py-2">
+                                    <div class="font-weight-bold pr-2">地點</div>
+                                    <small>新北市板橋區</small>                                    
+                                </div>
+                                <p>新北市歡樂耶誕城，是台灣新北市新板特區商圈的一系列耶誕節活動的總稱，首次舉辦是在2011</p>
+                                <div class="d-flex justify-content-end">
+                                    <div class="button rounded-pill justify-content-end">活動詳情</div>
+                                </div>                                
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-12 mb-4">
+                        <div class="card card-activity">
+                            <img class="card-img-top"  src="images/activity/3.png">
+                            <div class="card-body">
+                                <h2 class="card-title">新北市歡樂耶誕城</h2>
+                                <div class="d-flex justify-content-start align-items-end py-2">
+                                    <div class="font-weight-bold pr-2">時間</div>
+                                    <small>2021/11/20-2021/12/30</small>                                    
+                                </div>
+                                <div class="d-flex justify-content-start align-items-end py-2">
+                                    <div class="font-weight-bold pr-2">地點</div>
+                                    <small>新北市板橋區</small>                                    
+                                </div>
+                                <p>新北市歡樂耶誕城，是台灣新北市新板特區商圈的一系列耶誕節活動的總稱，首次舉辦是在2011</p>
+                                <div class="d-flex justify-content-end">
+                                    <div class="button rounded-pill bjustify-content-end">活動詳情</div>
+                                </div>                                
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-12">
+                        <div class="card card-activity">
+                            <img class="card-img-top"  src="images/activity/4.png">
+                            <div class="card-body">
+                                <h2 class="card-title">新北市歡樂耶誕城</h2>
+                                <div class="d-flex justify-content-start align-items-end py-2">
+                                    <div class="font-weight-bold pr-2">時間</div>
+                                    <small>2021/11/20-2021/12/30</small>                                    
+                                </div>
+                                <div class="d-flex justify-content-start align-items-end py-2">
+                                    <div class="font-weight-bold pr-2">地點</div>
+                                    <small>新北市板橋區</small>                                    
+                                </div>
+                                <p>新北市歡樂耶誕城，是台灣新北市新板特區商圈的一系列耶誕節活動的總稱，首次舉辦是在2011</p>
+                                <div class="d-flex justify-content-end">
+                                    <div class="button rounded-pill justify-content-end">活動詳情</div>
+                                </div>                                
+                            </div>
+                        </div>             
+                    </div>  
+                </div>
+                <div class="d-flex justify-content-end">
+                    <div class="more-button justify-content-end">More</div>
+                </div>
+            </div>
+        </section>
+        <section id="scenic-spot">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="section-title my-5">
+                            <div class="img">
+                                <img src="images/scenic-spot.svg " width="68" height="75">
+                            </div>
+                            <h1 class="title">熱門景點</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 px-5">
+                        <div class="owl-carousel carousel-widget owl-loaded owl-drag" data-margin="30" data-nav="true" data-autoplay="5000" data-items-xl="3" data-items-md="2" data-items-sm="1" data-items-xs="1">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 1.5s ease 0s;">
+                                    <div class="owl-item active">
+                                        <div class="card card-target owl-loaded mx-auto">
+                                            <img src="images/scenic-spot/1.png" alt="photo" class="card-img-top">
+                                            <div class="card-body">
+                                                <h2 class="card-title">陽明山國家公園</h2>
+                                                <div class="d-flex justify-content-start align-items-end">
+                                                    <img class="pr-2" src="images/map-lable.svg" style="width: auto; height: 20px;">
+                                                    <span>台北市 北投區</span>                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item">
+                                        <div class="card card-target owl-loaded mx-auto">
+                                            <img src="images/scenic-spot/2.png" alt="photo" class="card-img-top">
+                                            <div class="card-body">
+                                                <h2 class="card-title">淡水老街</h2>
+                                                <div class="d-flex justify-content-start align-items-end">
+                                                    <img class="pr-2" src="images/map-lable.svg" style="width: auto; height: 20px;">
+                                                    <span>台中市 北屯區</span>                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                    <div class="owl-item">
+                                        <div class="card card-target owl-loaded mx-auto">
+                                            <img src="images/scenic-spot/3.png" alt="photo" class="card-img-top">
+                                            <div class="card-body">
+                                                <h2 class="card-title">寧夏夜市 </h2>
+                                                <div class="d-flex justify-content-start align-items-end">
+                                                    <img class="pr-2" src="images/map-lable.svg" style="width: auto; height: 20px;">
+                                                    <span>台南市 北投區</span>                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                    <div class="owl-item">
+                                        <div class="card card-target owl-loaded mx-auto">
+                                            <img src="images/scenic-spot/4.png" alt="photo" class="card-img-top">
+                                            <div class="card-body">
+                                                <h2 class="card-title">台中歌劇院</h2>
+                                                <div class="d-flex justify-content-start align-items-end">
+                                                    <img class="pr-2" src="images/map-lable.svg" style="width: auto; height: 20px;">
+                                                    <span>台北市 信義區</span>                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <div class="more-button justify-content-end">More</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="restaurant">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="section-title my-5">
+                            <div class="img">
+                                <img src="images/restaurant.svg" width="47" height="76">
+                            </div>
+                            <h1 class="title">推薦美食</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 px-5">
+                        <div class="owl-carousel carousel-widget owl-loaded owl-drag" data-margin="30" data-nav="true" data-autoplay="5000" data-items-xl="3" data-items-md="2" data-items-sm="1" data-items-xs="1">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 1.5s ease 0s;">
+                                    <div class="owl-item active">
+                                        <div class="card card-target owl-loaded mx-auto">
+                                            <img src="images/restaurant/1.png" alt="photo" class="card-img-top">
+                                            <div class="card-body">
+                                                <h2 class="card-title">日式定食</h2>
+                                                <div class="d-flex justify-content-start align-items-end">
+                                                    <img class="pr-2" src="images/map-lable.svg" style="width: auto; height: 20px;">
+                                                    <span>台北市 北投區</span>                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item">
+                                        <div class="card card-target owl-loaded mx-auto">
+                                            <img src="images/restaurant/2.png" alt="photo" class="card-img-top">
+                                            <div class="card-body">
+                                                <h2 class="card-title">風味火鍋</h2>
+                                                <div class="d-flex justify-content-start align-items-end">
+                                                    <img class="pr-2" src="images/map-lable.svg" style="width: auto; height: 20px;">
+                                                    <span>台中市 北屯區</span>                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                    <div class="owl-item">
+                                        <div class="card card-target owl-loaded mx-auto">
+                                            <img src="images/restaurant/3.png" alt="photo" class="card-img-top">
+                                            <div class="card-body">
+                                                <h2 class="card-title">生魚片料理</h2>
+                                                <div class="d-flex justify-content-start align-items-end">
+                                                    <img class="pr-2" src="images/map-lable.svg" style="width: auto; height: 20px;">
+                                                    <span>台南市 北投區</span>                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                    <div class="owl-item">
+                                        <div class="card card-target owl-loaded mx-auto">
+                                            <img src="images/restaurant/4.png" alt="photo" class="card-img-top">
+                                            <div class="card-body">
+                                                <h2 class="card-title">貴婦下午茶</h2>
+                                                <div class="d-flex justify-content-start align-items-end">
+                                                    <img class="pr-2" src="images/map-lable.svg" style="width: auto; height: 20px;">
+                                                    <span>台北市 信義區</span>                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <div class="more-button justify-content-end">More</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container d-flex align-items-center justify-content-center h-100">
+                <div class="row text-center">Copyright@2021 Alena Hsu 保留一切權利。<br>Coding by Jing</div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:false
+                    },
+                    768:{
+                        items:1,
+                        nav:false
+                    },
+                    768:{
+                        items:2
+                    },
+                    1000:{
+                        items:3
+                    },
+                    1440:{
+                        items:4,
+                        loop:false
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
