@@ -40,8 +40,25 @@ p {
   font-weight: 300;
 }
 
-.wapper {
+a {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #5B9BD5 !important;
+  text-decoration: none !important;
+  font-weight: 300;
+  font-size: 16px;
+}
+a:hover, a:active {
+  color: #00457C !important;
+}
+
+.wapperd {
   min-height: calc(100vh - 105px);
+}
+
+.underline {
+  width: 57px;
+  border-bottom: solid 7px #E8D4A2;
+  padding-bottom: 8px;
 }
 
 .logo {
@@ -76,6 +93,8 @@ p {
   color: #FFF;
   line-height: 1.5;
   font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 footer {
@@ -253,6 +272,10 @@ footer {
     padding: 0.75rem 1rem;
   }
 }
+.card-activity img {
+  object-fit: cover;
+}
+
 @media (min-width: 1441px) {
   .card-activity {
     flex-direction: row;
@@ -341,5 +364,23 @@ footer {
   }
   .owl-nav .owl-next {
     right: -30px;
+  }
+}
+.nav .nav-link {
+  font-family: "Microsoft JhengHei", sans-serif;
+  font-weight: 700;
+  color: #000 !important;
+  border-radius: 0px;
+  margin-right: 25px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  border-bottom: solid 8px #5B9BD5;
+  background-color: transparent !important;
+}
+
+@media (max-width: 768px) {
+  .nav .nav-item {
+    min-width: 50%;
   }
 }

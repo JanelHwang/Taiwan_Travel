@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>台灣旅遊景點導覽 - 全台景點</title>
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link  rel="stylesheet" href="assets/fontawsome/css/all.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <div class="wrapper clearfix"> 
+        <header class="full-header sticky-header">
+            <nav class="navbar navbar-expand-lg  navbar-dark theme-bg-color py-2">
+                <div class="container">
+                    <a href="index.html">
+                        <img src="images/logo.png" class="logo" alt="Logo" height="62">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+                        <ul class="navbar-nav ml-auto pr-0">
+                            <li class="nav-item"><a href="activities.html" class="nav-link">精選活動</a></li>
+                            <li class="nav-item"><a href="tours.html" class="nav-link">全台景點</a></li>
+                            <li class="nav-item"><a href="restaurants.html" class="nav-link">探索美食</a></li>
+                            <li class="nav-item"><a href="hotels.html" class="nav-link">住宿飯店</a></li>
+                        </ul>
+                    </div>
+                </div> 
+            </nav>
+            <section style="background: url('images/banner/2.png') top center; background-size: cover; height: 370px;">
+                <div class="container d-flex align-items-center justify-content-center h-100">
+                    <form class="navbar-search w-100">
+                        <div class="col-lg-12 text-center">
+                            <div class="title">全台景點</div>
+                        </div>
+                    </form>
+                </div>
+                
+            </section>
+        </header>
+        <section id="activity">
+            <div class="container">
+                <div class="row my-4">
+                    <div class="container d-flex align-items-center justify-content-center h-100">
+                        <form class="navbar-search w-100">
+                            <div class="text-center mt-5">
+                                <div class="dropdown">
+                                    <button class="search-dropdown rounded-pill w-100" type="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="images/search.svg"><span class="site">我想去...</span>
+                                    </button>
+                                    <div class="dropdown-menu w-100" aria-labelledby="dropdownMenu2">
+                                        <div class="container">
+                                            <div class="row mb-3">
+                                                <div class="col-12">
+                                                    <h3><img class="pr-2" src="images/hit.svg">熱門關鍵字</h3>
+                                                </div>
+                                                <div class="d-flex justify-content-star py-2">
+                                                    <a href="#" class="p-2 d-block">新北耶誕城</a>
+                                                    <a href="#" class="p-2 d-block">小琉球</a>
+                                                    <a href="#" class="p-2 d-block">台中燒肉</a>
+                                                </div>
+                                               </ul>
+                                            </div>
+                                            <div class="row d-flex justify-content-start">
+                                                <div class="col-md-2 col-sm-6 col-6 mb-2">
+                                                    <ul>
+                                                        <h3 class="underline mb-1">北部</h3>
+                                                        <li class="dropdown-item" type="button">基隆</li>
+                                                        <li class="dropdown-item" type="button">新北</li>
+                                                        <li class="dropdown-item" type="button">台北</li>
+                                                        <li class="dropdown-item" type="button">桃園</li>
+                                                        <li class="dropdown-item" type="button">新竹</li>
+                                                        <li class="dropdown-item" type="button">苗栗</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-2 col-sm-6 col-6 mb-2">
+                                                    <ul>
+                                                        <h3 class="underline mb-1">中部</h3>
+                                                        <li class="dropdown-item" type="button">台中</li>
+                                                        <li class="dropdown-item" type="button">彰化</li>
+                                                        <li class="dropdown-item" type="button">南投</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-2 col-sm-6 col-6 mb-2">
+                                                    <ul>
+                                                        <h3 class="underline mb-1">南部</h3>
+                                                        <li class="dropdown-item" type="button">嘉義</li>
+                                                        <li class="dropdown-item" type="button">台南</li>
+                                                        <li class="dropdown-item" type="button">高雄</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-2 col-sm-6 col-6 mb-2">
+                                                    <ul>
+                                                        <h3 class="underline mb-1">東部</h3>
+                                                        <li class="dropdown-item" type="button">宜蘭</li>
+                                                        <li class="dropdown-item" type="button">花蓮</li>
+                                                        <li class="dropdown-item" type="button">台東</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-2 col-sm-6 col-6 mb-2">
+        
+                                                    <ul>
+                                                        <h3 class="underline mb-1">外島</h3>
+                                                        <li class="dropdown-item" type="button">澎湖 </li>
+                                                        <li class="dropdown-item" type="button">金門</li>
+                                                        <li class="dropdown-item" type="button">馬祖</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                         <ul class="nav nav-pills mb-3 border-bottom" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">精選活動</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">全台景點</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">探索美食</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact-2" role="tab" aria-controls="pills-contact-2" aria-selected="false">住宿飯店</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="row pt-5">
+                                    <div class="col-md-6 col-sm-12 col-12 mb-4">
+                                        <div class="card card-activity">
+                                            <img class="card-img-top"  src="images/activity/1.png">
+                                            <div class="card-body">
+                                                <h2 class="card-title">新北市歡樂耶誕城</h2>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">時間</div>
+                                                    <small>2021/11/20-2021/12/30</small>                                    
+                                                </div>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">地點</div>
+                                                    <small>新北市板橋區</small>                                    
+                                                </div>
+                                                <p>新北市歡樂耶誕城，是台灣新北市新板特區商圈的一系列耶誕節活動的總稱，首次舉辦是在2011</p>
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="button rounded-pill justify-content-end">活動詳情</div>
+                                                </div>
+                                            </div>
+                                        </div>                    
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-12 mb-4">
+                                        <div class="card card-activity">
+                                            <img class="card-img-top"  src="images/activity/2.png">
+                                            <div class="card-body">
+                                                <h2 class="card-title">新北市歡樂耶誕城</h2>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">時間</div>
+                                                    <small>2021/11/20-2021/12/30</small>                                    
+                                                </div>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">地點</div>
+                                                    <small>新北市板橋區</small>                                    
+                                                </div>
+                                                <p>新北市歡樂耶誕城，是台灣新北市新板特區商圈的一系列耶誕節活動的總稱，首次舉辦是在2011</p>
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="button rounded-pill justify-content-end">活動詳情</div>
+                                                </div>                                
+                                            </div>
+                                        </div>                    
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-12 mb-4">
+                                        <div class="card card-activity">
+                                            <img class="card-img-top"  src="images/activity/3.png">
+                                            <div class="card-body">
+                                                <h2 class="card-title">新北市歡樂耶誕城</h2>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">時間</div>
+                                                    <small>2021/11/20-2021/12/30</small>                                    
+                                                </div>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">地點</div>
+                                                    <small>新北市板橋區</small>                                    
+                                                </div>
+                                                <p>新北市歡樂耶誕城，是台灣新北市新板特區商圈的一系列耶誕節活動的總稱，首次舉辦是在2011</p>
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="button rounded-pill bjustify-content-end">活動詳情</div>
+                                                </div>                                
+                                            </div>
+                                        </div>                    
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-12 mb-4">
+                                        <div class="card card-activity">
+                                            <img class="card-img-top"  src="images/activity/4.png">
+                                            <div class="card-body">
+                                                <h2 class="card-title">新北市歡樂耶誕城</h2>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">時間</div>
+                                                    <small>2021/11/20-2021/12/30</small>                                    
+                                                </div>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">地點</div>
+                                                    <small>新北市板橋區</small>                                    
+                                                </div>
+                                                <p>新北市歡樂耶誕城，是台灣新北市新板特區商圈的一系列耶誕節活動的總稱，首次舉辦是在2011</p>
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="button rounded-pill justify-content-end">活動詳情</div>
+                                                </div>                                
+                                            </div>
+                                        </div>             
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="row pt-5">
+                                    <div class="col-md-6 col-sm-12 col-12 mb-4">
+                                        <div class="card card-activity">
+                                            <img class="card-img-top"  src="images/activity/1.png">
+                                            <div class="card-body">
+                                                <h2 class="card-title">新北市歡樂耶誕城</h2>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">時間</div>
+                                                    <small>2021/11/20-2021/12/30</small>                                    
+                                                </div>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">地點</div>
+                                                    <small>新北市板橋區</small>                                    
+                                                </div>
+                                                <p>新北市歡樂耶誕城，是台灣新北市新板特區商圈的一系列耶誕節活動的總稱，首次舉辦是在2011</p>
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="button rounded-pill justify-content-end">活動詳情</div>
+                                                </div>
+                                            </div>
+                                        </div>                    
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-12 mb-4">
+                                        <div class="card card-activity">
+                                            <img class="card-img-top"  src="images/activity/2.png">
+                                            <div class="card-body">
+                                                <h2 class="card-title">新北市歡樂耶誕城</h2>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">時間</div>
+                                                    <small>2021/11/20-2021/12/30</small>                                    
+                                                </div>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">地點</div>
+                                                    <small>新北市板橋區</small>                                    
+                                                </div>
+                                                <p>新北市歡樂耶誕城，是台灣新北市新板特區商圈的一系列耶誕節活動的總稱，首次舉辦是在2011</p>
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="button rounded-pill justify-content-end">活動詳情</div>
+                                                </div>                                
+                                            </div>
+                                        </div>                    
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-12 mb-4">
+                                        <div class="card card-activity">
+                                            <img class="card-img-top"  src="images/activity/3.png">
+                                            <div class="card-body">
+                                                <h2 class="card-title">新北市歡樂耶誕城</h2>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">時間</div>
+                                                    <small>2021/11/20-2021/12/30</small>                                    
+                                                </div>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">地點</div>
+                                                    <small>新北市板橋區</small>                                    
+                                                </div>
+                                                <p>新北市歡樂耶誕城，是台灣新北市新板特區商圈的一系列耶誕節活動的總稱，首次舉辦是在2011</p>
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="button rounded-pill bjustify-content-end">活動詳情</div>
+                                                </div>                                
+                                            </div>
+                                        </div>                    
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-12 mb-4">
+                                        <div class="card card-activity">
+                                            <img class="card-img-top"  src="images/activity/4.png">
+                                            <div class="card-body">
+                                                <h2 class="card-title">新北市歡樂耶誕城</h2>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">時間</div>
+                                                    <small>2021/11/20-2021/12/30</small>                                    
+                                                </div>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">地點</div>
+                                                    <small>新北市板橋區</small>                                    
+                                                </div>
+                                                <p>新北市歡樂耶誕城，是台灣新北市新板特區商圈的一系列耶誕節活動的總稱，首次舉辦是在2011</p>
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="button rounded-pill justify-content-end">活動詳情</div>
+                                                </div>                                
+                                            </div>
+                                        </div>             
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                <div class="row pt-5">
+                                    <div class="col-md-6 col-sm-12 col-12 mb-4">
+                                        <div class="card card-activity">
+                                            <img class="card-img-top"  src="images/activity/1.png">
+                                            <div class="card-body">
+                                                <h2 class="card-title">新北市歡樂耶誕城</h2>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">時間</div>
+                                                    <small>2021/11/20-2021/12/30</small>                                    
+                                                </div>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">地點</div>
+                                                    <small>新北市板橋區</small>                                    
+                                                </div>
+                                                <p>新北市歡樂耶誕城，是台灣新北市新板特區商圈的一系列耶誕節活動的總稱，首次舉辦是在2011</p>
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="button rounded-pill justify-content-end">活動詳情</div>
+                                                </div>
+                                            </div>
+                                        </div>                    
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-12 mb-4">
+                                        <div class="card card-activity">
+                                            <img class="card-img-top"  src="images/activity/2.png">
+                                            <div class="card-body">
+                                                <h2 class="card-title">新北市歡樂耶誕城</h2>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">時間</div>
+                                                    <small>2021/11/20-2021/12/30</small>                                    
+                                                </div>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">地點</div>
+                                                    <small>新北市板橋區</small>                                    
+                                                </div>
+                                                <p>新北市歡樂耶誕城，是台灣新北市新板特區商圈的一系列耶誕節活動的總稱，首次舉辦是在2011</p>
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="button rounded-pill justify-content-end">活動詳情</div>
+                                                </div>                                
+                                            </div>
+                                        </div>                    
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-12 mb-4">
+                                        <div class="card card-activity">
+                                            <img class="card-img-top"  src="images/activity/3.png">
+                                            <div class="card-body">
+                                                <h2 class="card-title">新北市歡樂耶誕城</h2>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">時間</div>
+                                                    <small>2021/11/20-2021/12/30</small>                                    
+                                                </div>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">地點</div>
+                                                    <small>新北市板橋區</small>                                    
+                                                </div>
+                                                <p>新北市歡樂耶誕城，是台灣新北市新板特區商圈的一系列耶誕節活動的總稱，首次舉辦是在2011</p>
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="button rounded-pill bjustify-content-end">活動詳情</div>
+                                                </div>                                
+                                            </div>
+                                        </div>                    
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-12 mb-4">
+                                        <div class="card card-activity">
+                                            <img class="card-img-top"  src="images/activity/4.png">
+                                            <div class="card-body">
+                                                <h2 class="card-title">新北市歡樂耶誕城</h2>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">時間</div>
+                                                    <small>2021/11/20-2021/12/30</small>                                    
+                                                </div>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">地點</div>
+                                                    <small>新北市板橋區</small>                                    
+                                                </div>
+                                                <p>新北市歡樂耶誕城，是台灣新北市新板特區商圈的一系列耶誕節活動的總稱，首次舉辦是在2011</p>
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="button rounded-pill justify-content-end">活動詳情</div>
+                                                </div>                                
+                                            </div>
+                                        </div>             
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact-2" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                <div class="row pt-5">
+                                    <div class="col-md-6 col-sm-12 col-12 mb-4">
+                                        <div class="card card-activity">
+                                            <img class="card-img-top"  src="images/activity/1.png">
+                                            <div class="card-body">
+                                                <h2 class="card-title">新北市歡樂耶誕城</h2>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">時間</div>
+                                                    <small>2021/11/20-2021/12/30</small>                                    
+                                                </div>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">地點</div>
+                                                    <small>新北市板橋區</small>                                    
+                                                </div>
+                                                <p>新北市歡樂耶誕城，是台灣新北市新板特區商圈的一系列耶誕節活動的總稱，首次舉辦是在2011</p>
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="button rounded-pill justify-content-end">活動詳情</div>
+                                                </div>
+                                            </div>
+                                        </div>                    
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-12 mb-4">
+                                        <div class="card card-activity">
+                                            <img class="card-img-top"  src="images/activity/2.png">
+                                            <div class="card-body">
+                                                <h2 class="card-title">新北市歡樂耶誕城</h2>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">時間</div>
+                                                    <small>2021/11/20-2021/12/30</small>                                    
+                                                </div>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">地點</div>
+                                                    <small>新北市板橋區</small>                                    
+                                                </div>
+                                                <p>新北市歡樂耶誕城，是台灣新北市新板特區商圈的一系列耶誕節活動的總稱，首次舉辦是在2011</p>
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="button rounded-pill justify-content-end">活動詳情</div>
+                                                </div>                                
+                                            </div>
+                                        </div>                    
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-12 mb-4">
+                                        <div class="card card-activity">
+                                            <img class="card-img-top"  src="images/activity/3.png">
+                                            <div class="card-body">
+                                                <h2 class="card-title">新北市歡樂耶誕城</h2>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">時間</div>
+                                                    <small>2021/11/20-2021/12/30</small>                                    
+                                                </div>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">地點</div>
+                                                    <small>新北市板橋區</small>                                    
+                                                </div>
+                                                <p>新北市歡樂耶誕城，是台灣新北市新板特區商圈的一系列耶誕節活動的總稱，首次舉辦是在2011</p>
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="button rounded-pill bjustify-content-end">活動詳情</div>
+                                                </div>                                
+                                            </div>
+                                        </div>                    
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-12 mb-4">
+                                        <div class="card card-activity">
+                                            <img class="card-img-top"  src="images/activity/4.png">
+                                            <div class="card-body">
+                                                <h2 class="card-title">新北市歡樂耶誕城</h2>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">時間</div>
+                                                    <small>2021/11/20-2021/12/30</small>                                    
+                                                </div>
+                                                <div class="d-flex justify-content-start align-items-end py-2">
+                                                    <div class="font-weight-bold pr-2">地點</div>
+                                                    <small>新北市板橋區</small>                                    
+                                                </div>
+                                                <p>新北市歡樂耶誕城，是台灣新北市新板特區商圈的一系列耶誕節活動的總稱，首次舉辦是在2011</p>
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="button rounded-pill justify-content-end">活動詳情</div>
+                                                </div>                                
+                                            </div>
+                                        </div>             
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container d-flex align-items-center justify-content-center h-100">
+                <div class="row text-center">Copyright@2021 Alena Hsu 保留一切權利。<br>Coding by Jing</div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:false
+                    },
+                    768:{
+                        items:1,
+                        nav:false
+                    },
+                    768:{
+                        items:2
+                    },
+                    1000:{
+                        items:3
+                    },
+                    1440:{
+                        items:4,
+                        loop:false
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

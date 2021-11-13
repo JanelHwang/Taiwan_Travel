@@ -60,10 +60,23 @@ h3
     font-size: $headline-size-3 !important
 p
     font-weight: $font-weight-300
+a
+    font-family: $noto-sans
+    color: $light-bule !important
+    text-decoration: none !important
+    font-weight: $font-weight-300
+    font-size: $headline-size-3
+    &:hover, &:active
+        color: $dark-bule !important
+    
 
-.wapper
+.wapperd
     min-height: calc(100vh - 105px)
 
+.underline
+    width: 57px
+    border-bottom: solid 7px $khaki 
+    padding-bottom: 8px
 .logo
     width: 100%
     -webkit-filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.25))
@@ -92,6 +105,8 @@ p
     color: $white
     line-height: $line-height
     font-weight: $font-weight-700
+    letter-spacing: 2px
+    text-shadow: $shadow
 
 footer
     font-family: $jheng-hei
@@ -234,6 +249,7 @@ footer
     &:focus
         color: inherit
 
+
 @media (min-width: 749px)
     .card-target
         width: 280px
@@ -241,6 +257,11 @@ footer
             min-height: 280px
         .card-body
             padding: 0.75rem 1rem
+
+.card-activity
+    img
+        object-fit: cover
+
 @media (min-width: 1441px)
     .card-activity
         flex-direction: row
@@ -253,6 +274,7 @@ footer
         margin-bottom: 54px 
         .card-img-top
             max-width: 280px
+
         .card-bodycard-body
             width: 100%
         
@@ -318,3 +340,22 @@ footer
             left: -30px
         .owl-next
             right: -30px
+
+//travel theme
+.nav
+    .nav-link
+        font-family: $jheng-hei
+        font-weight: $font-weight-700
+        color: $black !important
+        border-radius: 0px
+        margin-right: 25px
+
+.nav-pills
+  .nav-link.active, .show > .nav-link
+    border-bottom: solid 8px $light-bule
+    background-color: transparent !important
+
+@media (max-width: 768px)
+    .nav
+        .nav-item
+            min-width: 50%
