@@ -426,8 +426,13 @@ footer {
     margin-bottom: 54px; }
     .card-activity .card-img-top {
       max-width: 280px; }
-    .card-activity .card-bodycard-body {
-      width: 100%; } }
+    .card-activity .card-body {
+      width: 100%; }
+      .card-activity .card-body .card-title {
+        white-space: nowrap;
+        max-width: 218px;
+        overflow: hidden;
+        text-overflow: ellipsis; } }
 
 @media (max-width: 1199px) {
   .card-activity {

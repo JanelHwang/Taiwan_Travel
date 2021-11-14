@@ -185,7 +185,8 @@ footer { font-family: "Microsoft JhengHei", sans-serif; position: relative; left
 
 @media (min-width: 1200px) and (max-width: 1440px) { .card-activity { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; margin-bottom: 54px; }
   .card-activity .card-img-top { max-width: 280px; }
-  .card-activity .card-bodycard-body { width: 100%; } }
+  .card-activity .card-body { width: 100%; }
+  .card-activity .card-body .card-title { white-space: nowrap; max-width: 218px; overflow: hidden; text-overflow: ellipsis; } }
 
 @media (max-width: 1199px) { .card-activity { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
 
