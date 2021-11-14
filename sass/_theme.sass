@@ -271,13 +271,17 @@ footer
 @media (min-width: 1200px) and (max-width: 1440px)
     .card-activity
         flex-direction: row
-        margin-bottom: 54px 
+        margin-bottom: 54px
         .card-img-top
             max-width: 280px
-
-        .card-bodycard-body
+        .card-body
             width: 100%
-        
+            .card-title
+                white-space: nowrap
+                max-width: 218px
+                overflow: hidden
+                text-overflow: ellipsis
+
 @media (max-width: 1199px)
     .card-activity
         flex-direction: column
